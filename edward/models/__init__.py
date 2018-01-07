@@ -4,6 +4,7 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
+from edward.models.core import *
 from edward.models.random_variable import RandomVariable
 from edward.models.random_variables import *
 
@@ -12,6 +13,8 @@ from edward.models import random_variables as _module
 
 _allowed_symbols = [
     'RandomVariable',
+    'Trace',
+    'primitive',
 ]
 for name in dir(_module):
   obj = getattr(_module, name)
