@@ -31,7 +31,7 @@ from edward.util import (
     copy, dot,
     get_ancestors, get_blanket, get_children, get_control_variate_coef,
     get_descendants, get_parents, get_siblings, get_variables,
-    is_independent, Progbar, random_variables, rbf,
+    is_independent, random_variables, rbf,
     to_simplex, transform)
 from edward.version import __version__, VERSION
 
@@ -77,7 +77,6 @@ _allowed_symbols = [
     'get_siblings',
     'get_variables',
     'is_independent',
-    'Progbar',
     'random_variables',
     'rbf',
     'to_simplex',
