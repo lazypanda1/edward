@@ -29,12 +29,18 @@ from edward.inferences import (
 from edward.models import (
     RandomVariable,
     Trace,
+    get_ancestors,
+    get_blanket,
+    get_children,
+    get_descendants,
+    get_parents,
+    get_siblings,
+    get_variables,
+    is_independent,
     random_variables)
 from edward.util import (
     copy,
-    get_ancestors, get_blanket, get_children, get_control_variate_coef,
-    get_descendants, get_parents, get_siblings, get_variables,
-    is_independent,
+    get_control_variate_coef,
     transform)
 from edward.version import __version__, VERSION
 
