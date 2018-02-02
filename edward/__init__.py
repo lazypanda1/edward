@@ -27,7 +27,6 @@ from edward.inferences import (
     wgan_inference)
 from edward.models import (
     RandomVariable,
-    Trace,
     get_ancestors,
     get_blanket,
     get_children,
@@ -36,7 +35,8 @@ from edward.models import (
     get_siblings,
     get_variables,
     is_independent,
-    random_variables)
+    random_variables,
+    trace)
 from edward.util import (
     get_control_variate_coef,
     transform)
@@ -67,7 +67,6 @@ _allowed_symbols = [
     'wake_sleep',
     'wgan_inference',
     'RandomVariable',
-    'Trace',
     'get_ancestors',
     'get_blanket',
     'get_children',
@@ -78,6 +77,7 @@ _allowed_symbols = [
     'get_variables',
     'is_independent',
     'random_variables',
+    'trace',
     'transform',
     '__version__',
     'VERSION',

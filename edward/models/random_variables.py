@@ -4,7 +4,7 @@ from __future__ import print_function
 
 import inspect as _inspect
 
-from edward.models.core import primitive_cls as _primitive_cls
+from edward.models.core import primitive as _primitive
 from edward.models.random_variable import RandomVariable as _RandomVariable
 from tensorflow.contrib import distributions as _distributions
 
@@ -19,7 +19,7 @@ for _name in sorted(dir(_distributions)):
 
     # write a new __init__ method in order to decorate class as primitive
     # and share _candidate's docstring
-    @_primitive_cls
+    @_primitive
     def __init__(self, *args, **kwargs):
       _RandomVariable.__init__(self, *args, **kwargs)
     __init__.__doc__ = _candidate.__init__.__doc__

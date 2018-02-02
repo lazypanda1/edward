@@ -15,7 +15,6 @@ from edward.models import random_variables as _module
 
 _allowed_symbols = [
     'RandomVariable',
-    'Trace',
     'get_ancestors',
     'get_blanket',
     'get_children',
@@ -24,8 +23,8 @@ _allowed_symbols = [
     'get_siblings',
     'get_variables',
     'is_independent',
-    'primitive',
     'random_variables',
+    'trace',
 ]
 for name in dir(_module):
   obj = getattr(_module, name)

@@ -6,7 +6,7 @@ import inspect
 import six
 import tensorflow as tf
 
-from edward.models import RandomVariable
+from edward.models.random_variable import RandomVariable
 from edward.util import transform as _transform
 
 tfb = tf.contrib.distributions.bijectors
